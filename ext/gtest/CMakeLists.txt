@@ -3,11 +3,7 @@ project(gtest_builder C CXX)
 include(ExternalProject)
 
 set(GTEST_FORCE_SHARED_CRT ON)
-set(GTEST_DISABLE_PTHREADS OFF)
-
-if(MINGW)
-    set(GTEST_DISABLE_PTHREADS ON)
-endif()
+set(GTEST_DISABLE_PTHREADS ON)
 
 ExternalProject_Add(googletest
     GIT_REPOSITORY https://github.com/google/googletest.git
