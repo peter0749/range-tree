@@ -38,7 +38,9 @@
 
 #include <vector>
 #include <iostream>
+#include <memory>
 #include <sstream>
+#include <algorithm>
 #include <numeric>
 #include <type_traits>
 #include <deque>
